@@ -11,6 +11,7 @@
     --color-blue-100: #0093E9;
     
     --color-gradient: radial-gradient(circle at 10% 20%, rgb(28, 142, 210) 0%, rgb(113, 192, 244) 47.3%, rgb(139, 238, 230) 88.4%);
+    --color-gradient-dark: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
     
 
 }
@@ -146,13 +147,17 @@
 }
 
 .dark#container {
-    background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    background: var(--color-gradient-dark)
 }
 
 .dark#login_form {
     color: var(--color-light-50);
     background-color: var(--color-dark-100);
     animation: light-to-dark 0.3s ease-in-out;
+}
+
+.dark#login_button {
+    background: var(--color-gradient-dark);
 }
 
 .dark#login_form .input_field input,
